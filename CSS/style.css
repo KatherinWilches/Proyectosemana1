@@ -1,0 +1,247 @@
+body {
+
+    background-color: #000000;
+    margin: 60px 200px 0px 200px;
+    font-family: 'Bebas Neue', cursive;
+}
+/* comentario */
+.logo{  /* conteneror de titulo principal*/
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logoimagen{
+    width: 220px;
+    display: block;
+    margin: auto;
+}
+/*Selector simple*/
+nav{
+
+    padding: 20px 0px 20px 0px ;
+    text-align: center;
+}
+
+.Barradenavegacion {
+    display: inline-flex;
+/*quitar las viñetas */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion{
+
+    padding: 10px 60px 10px 60px;
+}
+
+.navegacion:hover{
+
+    background-color: rgb(163, 29, 141);
+}
+/*selector Descendiente*/
+.navegacion a{
+
+    text-decoration: none;
+    /*Para cologar color en el texto*/
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/*partel - parallax*/
+
+.parallax{ /*Contenedor*/
+    background-image: url(../Imagenes/Miley.jpg);
+    /*Establece la altura minima de los elementos de bloque*/
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*bacground-size: 100% 100%; */
+    /*fondo estático*/
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.tituloparallax h2{
+
+    font-size: 2cm; /*75px*/
+    color: whitesmoke;
+    font-weight: 700;
+    text-align: center;
+}
+
+.parrafoparallax{
+    display: flex;
+    border: 2px solid whitesmoke;
+    justify-content: center;
+}
+
+.parrafoparallax:hover{
+    background-color: rgb(163, 29, 141);
+    opacity: 0.7;
+}
+
+.parrafoparallax a{
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 400;
+    padding: 10px 30px;
+    margin: 0;
+    text-decoration: none;
+}
+
+/*seccion 3 - info*/
+.informacion{/*BIO*/
+
+    display: inline-flex;
+}
+
+.informacion p{
+
+    color: whitesmoke;
+    /*coloca el máximo de ancho a un elemento - además, impide que el valor de widh sea más largo que el valor especificado*/
+    max-width: 50%;
+    margin: 0;
+    /* popiedad Flexible - los alinea al centro*/
+    align-self: center;
+    padding-left: 50px;
+    /*establece la altura entre lineas de parrafo*/
+    line-height: 23px;
+    }
+
+.titulomiley{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    display: inline-flex;
+}
+
+.titulomiley2{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;    
+}
+
+.informacion img { /*bioimagen*/
+    width: 50%;
+/*el navegador calculará la altura al elemento especificado*/
+    height: auto; 
+    padding: 0px 50px 0px 50px;
+}
+
+.contentmusic{
+    font-family: 'Fjalla One', sans-serif;;
+/*espaciado*/
+    letter-spacing: 5px;
+    line-height: 2px;
+}
+
+.contentmusic h2{
+    margin: 40px 0px;
+    font-size: 1.5cm;
+    color: whitesmoke;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    /*desborda el contenido el oculta*/
+    overflow: hidden;
+    margin: 0 10px;
+    text-align: center;
+    /* Hacer una transicion - animación css*/
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{ 
+    width: 350px;
+    height: 350px;
+}
+
+.container .card h4{
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+.container .card p{
+    /*root em basado en la raiz - 16px*/
+    padding:  0 1rem;
+    font-size:  16px;
+    font-weight: 300px;
+    color: #f5f5f5;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #a31d8d;
+
+}
+
+.videos {
+    margin-top: 50px;
+}
+
+.imagensection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imagensection img {
+    width: auto;
+    height: 100px;
+}
+
+.iframeprincipal {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.iframe iframe{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.final {
+    background-color: rgb(168, 161, 190);
+    margin-top: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final p{
+    text-align: center;
+    font-weight: 400px;
+    color: #a31d8d;
+}
+
